@@ -9,6 +9,20 @@ namespace Team_3___Mini_Projekt
 {
     internal class LoadFile
     {
+
+        private List<Foo> list = new List<Foo>();
+
+        public void Add(Foo foo)
+        {
+            this.list.Add(foo);
+        }
+
+        public Foo GetById(int id)
+        {
+            return this.list.FirstOrDefault(z => z.ID == id);
+        }
+
+
         //+load_file void()
 
         public static int listNumber { get; set; }
@@ -29,6 +43,11 @@ namespace Team_3___Mini_Projekt
             
             //Opret liste til bil objekter ud fra listen
             List<Cars.carStruct> carobjectList = new List<Cars.carStruct>();
+
+
+
+
+
 
             //opret nye biler ud fra listen, og overføre dem til carobjectList
             for (int i = 0; i < listNumber; i++)
@@ -63,18 +82,13 @@ namespace Team_3___Mini_Projekt
                 carobjectList.Add(carobject); // flyt bil objekt over i bilobjekt listen      
 
             }
-
-            /* til at teste hvad der er i carobjectlist
-            Console.WriteLine("Hvad indeholder carobjectlist:");
-            Console.WriteLine(carobjectList.Count);
-            for (int i = 0;i < carobjectList.Count; i++)
-            {
-                Console.WriteLine("ID: [{0}] Modelen er [{1}] nummerpladen er [{2}] årgangen er [{3}] prisen er [{4}]", carobjectList[i].ID,carobjectList[i].Model,carobjectList[i].NumberPlate,carobjectList[i].Year,carobjectList[i].Price);
-            }
-            */
-
+            
 
         }
+
+
+
+
 
     }
 }
