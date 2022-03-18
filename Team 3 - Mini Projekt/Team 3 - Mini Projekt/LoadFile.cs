@@ -8,5 +8,6 @@ namespace Team_3___Mini_Projekt
 {
     internal class LoadFile
     {
+        //+load_file void()
     }
 }
