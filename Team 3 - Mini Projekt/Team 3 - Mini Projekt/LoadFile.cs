@@ -15,73 +15,64 @@ namespace Team_3___Mini_Projekt
 
         public static void loadCarIntoList()
         {
-            var txt1 = File.ReadAllLines(@"C:\cars.txt");
-
+            //Aflæs hvad der er i filen og lig det i variablen txt1
+            var txt1 = File.ReadAllLines(@"C:\car\cars.txt");
+            //Opret list, og smid indholdet fra txt1 i den
             List<string> list = new List<string>(txt1);
             
-            //Console.WriteLine(list[0]);
-            listNumber = list.Count;
-            //Console.WriteLine(list.Count);
+            //Hvor mange emner er der i list, og overfør det til listNumber 
+            listNumber = list.Count; //Console.WriteLine(list.Count);
 
 
 
-
-            //var logFile = File.ReadAllLines(LOG_PATH);
-            //var logList = new List<string>(logFile);
-            Console.WriteLine("Hvad skriver den her ? ");
-            int test1 = list[1].IndexOf(",");
-            Console.WriteLine(test1);
-            test1 = list[0].IndexOf(",",list[0].IndexOf(",")+1);
-            Console.WriteLine(test1);
 
             
             //Opret liste til bil objekter ud fra listen
             List<Cars.carStruct> carobjectList = new List<Cars.carStruct>();
 
+            //opret nye biler ud fra listen, og overføre dem til carobjectList
             for (int i = 0; i < listNumber; i++)
             {
-                int stringLength = list[i].Length;
-                int zeroComma = 0;
-                int firstComma = list[i].IndexOf(",");
-                int secoundComma = list[i].IndexOf(",", firstComma+1);
-                int thirdComma = list[i].IndexOf(",", secoundComma+1);
-                int forthComma = list[i].IndexOf(",", thirdComma + 1);
+                int stringLength = list[i].Length; // hvor lang er hele linjen i [i]
+                int zeroComma = 0; //første tegn i en linje er ved plads 0
+                int firstComma = list[i].IndexOf(","); //hvor første komma er
+                int secoundComma = list[i].IndexOf(",", firstComma+1); // hvor andet komma er
+                int thirdComma = list[i].IndexOf(",", secoundComma+1); // hvor tredje komma er 
+                int forthComma = list[i].IndexOf(",", thirdComma + 1); // hvor fjere komma er
+
                 //Til at teste hvad der er i variablerne
-                Console.WriteLine("hvad står der i list nummer [{1}] : [{0}]",list[i],i);
-                Console.WriteLine("Hvar er der i variablerne: \n stringLength={5} og zeroComma={0} og firstComma={1} og secoundComma={2} og thirdComma={3} og forthComma={4}", zeroComma,firstComma,secoundComma,thirdComma,forthComma,stringLength);
-                int calc = stringLength - thirdComma;
-                Console.WriteLine("Hvad er stringlængden{0} og hvad er stringlængden minus third{1}",stringLength,(stringLength - thirdComma));
-                Console.WriteLine("Hvad er stringlængden{0} og hvad er stringlængden minus forth{1}", stringLength, (stringLength - forthComma));
-
-                int gotID = int.Parse(list[i].Substring(zeroComma, firstComma));
-                string gotMODEL = list[i].Substring(firstComma+1, secoundComma-2);
-                string gotNUMBERPLATE = list[i].Substring(secoundComma+1, stringLength - forthComma);
-                string gotYEAR = list[i].Substring(thirdComma + 1, 4);
+                //Console.WriteLine("hvad står der i list nummer [{1}] : [{0}]",list[i],i);
+                //Console.WriteLine("Hvar er der i variablerne: \n stringLength={5} og zeroComma={0} og firstComma={1} og secoundComma={2} og thirdComma={3} og forthComma={4}", zeroComma,firstComma,secoundComma,thirdComma,forthComma,stringLength);
 
 
-                Cars.carStruct carobject = new Cars.carStruct();
+                int gotID = int.Parse(list[i].Substring(zeroComma, firstComma)); //Substring(fra, hvorLangtFrem) // hent ID ud fra linjen
+                string gotMODEL = list[i].Substring(firstComma+1, (secoundComma-firstComma)-1); // hent model ud fra linjen
+                string gotNUMBERPLATE = list[i].Substring(secoundComma+1, (thirdComma - secoundComma)-1); // hent nummerplade ud fra linjen
+                string gotYEAR = list[i].Substring(thirdComma + 1, (forthComma - thirdComma)-1); // hent år ud fra linjen
+                string gotPRICE = list[i].Substring(forthComma + 1, (stringLength-forthComma)-1); // hent pris ud fra linjen
 
-                carobject.ID = gotID;
-                carobject.Model = gotMODEL;
-                carobject.NumberPlate = gotNUMBERPLATE;
-                carobject.Year = int.Parse(gotYEAR);
-                carobject.Price = 344222.22;
 
-                Console.WriteLine("Hvad er ID?");
-                Console.WriteLine(gotID);
+                Cars.carStruct carobject = new Cars.carStruct(); // opret nyt bil objekt
 
-                carobjectList.Add(carobject);              
+                carobject.ID = gotID; // tilføj ID til bilobjekt
+                carobject.Model = gotMODEL; // tilføj model til bilobjekt
+                carobject.NumberPlate = gotNUMBERPLATE; // tilføj nummerplade til bilobjekt
+                carobject.Year = int.Parse(gotYEAR); // tilføj år til bilobjekt
+                carobject.Price = double.Parse(gotPRICE); // tilføj pris til bilobjekt
+
+                carobjectList.Add(carobject); // flyt bil objekt over i bilobjekt listen      
 
             }
+
+            /* til at teste hvad der er i carobjectlist
             Console.WriteLine("Hvad indeholder carobjectlist:");
             Console.WriteLine(carobjectList.Count);
             for (int i = 0;i < carobjectList.Count; i++)
             {
-                Console.WriteLine("ID: [{0}] , ",carobjectList[i].ID,carobjectList[i].Model,carobjectList[i].NumberPlate,carobjectList[i].Year);
+                Console.WriteLine("ID: [{0}] Modelen er [{1}] nummerpladen er [{2}] årgangen er [{3}] prisen er [{4}]", carobjectList[i].ID,carobjectList[i].Model,carobjectList[i].NumberPlate,carobjectList[i].Year,carobjectList[i].Price);
             }
+            */
 
-            // Console.WriteLine(car1.Model);
-            // List<string> listCarStructs = new List<string>();
 
         }
 
