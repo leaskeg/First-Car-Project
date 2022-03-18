@@ -14,3 +14,19 @@ C:\Users\polya\Source\Repos\Team-3\Team 3 - Mini Projekt\Team 3 - Mini Projekt\o
 C:\Users\polya\Source\Repos\Team-3\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\ref\Team 3 - Mini Projekt.dll
 C:\Users\polya\Source\Repos\Team-3\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\Team 3 - Mini Projekt.pdb
 C:\Users\polya\Source\Repos\Team-3\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\Team 3 - Mini Projekt.genruntimeconfig.cache
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\bin\Debug\net5.0\Team 3 - Mini Projekt.exe
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\bin\Debug\net5.0\Team 3 - Mini Projekt.deps.json
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\bin\Debug\net5.0\Team 3 - Mini Projekt.runtimeconfig.json
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\bin\Debug\net5.0\Team 3 - Mini Projekt.runtimeconfig.dev.json
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\bin\Debug\net5.0\Team 3 - Mini Projekt.dll
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\bin\Debug\net5.0\Team 3 - Mini Projekt.pdb
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\Team 3 - Mini Projekt.csproj.AssemblyReference.cache
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\Team 3 - Mini Projekt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\Team 3 - Mini Projekt.AssemblyInfoInputs.cache
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\Team 3 - Mini Projekt.AssemblyInfo.cs
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\Team 3 - Mini Projekt.csproj.CoreCompileInputs.cache
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\Team 3 - Mini Projekt.dll
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\refint\Team 3 - Mini Projekt.dll
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\Team 3 - Mini Projekt.pdb
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\Team 3 - Mini Projekt.genruntimeconfig.cache
+C:\Users\Jens Bach\Documents\GitHub\Team 3 - Mini Projekt\Team 3 - Mini Projekt\obj\Debug\net5.0\ref\Team 3 - Mini Projekt.dll

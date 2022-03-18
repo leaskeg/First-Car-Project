@@ -7,7 +7,10 @@ namespace Team_3___Mini_Projekt
         static void Main(string[] args)
         {
             Console.WriteLine("Velkommen til mini projekt.");
-
+            LoadFile.loadCarIntoList();
+            //Console.WriteLine(textOut);
+            UserChoice.printText();
+            UserChoice.UserInput();
             //eeakeakeka
         }
     }

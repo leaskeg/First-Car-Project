@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace Team_3___Mini_Projekt
 {
-    abstract class Cars
+    internal class Cars
     {
-        //kommentar
-        private int id = 0;
+        public struct carStruct
+        {
+            public int ID;
+            public string Model;
+            public string NumberPlate;
+            public int Year;
+            public double Price;
+        }
     }
 }
