@@ -9,5 +9,6 @@ namespace Team_3___Mini_Projekt
     abstract class Cars
     {
         //kommentar
+        private int id = 0;
     }
 }
