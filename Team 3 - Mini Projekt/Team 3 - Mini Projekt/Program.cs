@@ -12,6 +12,8 @@ namespace Team_3___Mini_Projekt
             UserChoice.printText();
             UserChoice.UserInput();
             //eeakeakeka
+
+            Console.ReadKey();
         }
     }
 }
