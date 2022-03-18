@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Team_3___Mini_Projekt
 {
-    abstract class Cars
+    internal class PrintCars
     {
-        //kommentar
-        private int id = 0;
     }
 }
