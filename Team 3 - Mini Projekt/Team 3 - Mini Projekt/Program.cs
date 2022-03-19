@@ -17,7 +17,7 @@ namespace Team_3___Mini_Projekt
             
             LoadFile loadFile = new LoadFile();
             loadFile.Add(new Foo { ID = 1, Model = "Jacob" });
-            Console.WriteLine(loadFile.GetById(1).ID);
+            Console.WriteLine(loadFile.GetById(1).Model);
 
             Console.ReadKey();
         }
